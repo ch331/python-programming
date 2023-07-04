@@ -1,0 +1,14 @@
+salary=float(input("enter your salary"))
+if salary>2000 and salary<=10000:
+    bonus1=salary*0.05
+elif salary>10000 and salary<=20000:
+    bonus2=salary*0.075
+elif salary<=2000 and salary>0:
+    years=int(input("enter your year of experience"))
+if year<5:
+     bonus=salary*0.1
+elif year>5:
+    bonus=salary*0.2
+else:
+    print("enter valid amount")
+    print("bonus is", bonus)
