@@ -1,0 +1,7 @@
+ch = input("Enter a character : ")
+if(ch.isdigit()):
+    print("The given character ", ch, "is a digit")
+elif(ch.isalpha()):
+    print("The given character ", ch, "is an alphabet")
+else:
+    print("The given character ", ch, "is a space")
