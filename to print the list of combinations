@@ -1,0 +1,14 @@
+def comb(L):  
+    a=input("Enter first value:")
+    b=input("Enter second value:")  
+    c=input("Enter third value:")  
+     
+    L.append(a)  
+    L.append(b)  
+    L.append(c)  
+    for i in range(3):  
+        for j in range(3):  
+            for k in range(3):  
+                if (i!=j and j!=k and i!=k or i == j, i == k, j == k):  
+                    print(L[i], L[j], L[k])                   
+comb([])
