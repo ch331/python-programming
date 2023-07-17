@@ -1,0 +1,16 @@
+def longestCommonPrefix(liststring):
+        ans=""
+        liststring=sorted(liststring)
+        first=liststring[0]
+        last=liststring[-1]
+        for i in range(min(len(first),len(last))):
+            if(first[i]!=last[i]):
+                return ans
+            ans+=first[i]
+        return ans
+strs = ["light","lime","line"]
+res=longestCommonPrefix(strs)
+print(res)
+strs = ["great","grow","grated"]
+res=longestCommonPrefix(strs)
+print(res)
